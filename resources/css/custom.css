@@ -1,0 +1,68 @@
+#basic-nav-dropdown {
+    display: flex;
+    align-items: center;
+}
+.pagetitle {
+    margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.table-center-data {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+}
+
+.dropbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: dashed;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    outline: none;
+    transition: border 0.24s ease-in-out;
+    cursor: pointer;
+}
+
+/* accommodate Bootstrap 5 with React-Bootstrap-Table2, which is intended for Bootstrap 4 */
+.react-bootstrap-table .caret {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0.255em;
+    content: "";
+    border-right: 0.25em solid transparent;
+    border-left: 0.25em solid transparent;
+    border-top: 0.25em solid;
+    border-bottom: 0;
+    opacity: 0.35;
+}
+
+.react-bootstrap-table .dropup .caret {
+    border-top: 0;
+    border-bottom: 0.3em solid;
+}
+
+.react-bootstrap-table .react-bootstrap-table-sort-order .caret {
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.react-bootstrap-table-sort-order,
+.react-bootstrap-table .order {
+    margin-left: 5px;
+}
+/* end React-Bootstrap-Table2 */
